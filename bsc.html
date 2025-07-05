@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bachelor of Science (B.Sc) | Nalanda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-light: #f7f9fc;
+      --primary: #2c3e50;
+      --secondary: #2980b9;
+      --accent: #e67e22;
+      --text: #34495e;
+      --shadow: 0 4px 12px rgba(0,0,0,0.1);
+      --radius: 8px;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg-light);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .banner {
+      background: url('https://kalingauniversity.ac.in/ku/wp-content/uploads/2020/11/Science-KU.jpg') no-repeat center/cover;
+      padding: 5rem 2rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    .banner h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.8rem;
+      margin: 0 0 1rem;
+    }
+
+    .overview, .highlights, .subjects, .cta {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .overview p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .highlights h3, .subjects h3 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--secondary);
+      margin-top: 2rem;
+    }
+
+    .highlights ul, .subjects ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    .highlights li::before, .subjects li::before {
+      content: '✔';
+      color: var(--accent);
+      margin-right: 0.5rem;
+    }
+
+    .program-blocks {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .program-card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+    }
+
+    .program-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .program-card h4 {
+      margin-top: 0;
+      color: var(--secondary);
+    }
+
+    .cta {
+      text-align: center;
+      margin: 3rem auto 2rem;
+    }
+
+    .cta a {
+      text-decoration: none;
+      background: var(--accent);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #d35400;
+    }
+
+    footer {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nalanda University</h1>
+  </header>
+
+  <section class="banner">
+    <h2>Bachelor of Science (B.Sc)</h2>
+    <p>Build a scientific mindset with hands-on learning and research focus</p>
+  </section>
+
+  <section class="overview">
+    <p>
+      Our B.Sc program empowers students with critical thinking, analytical skills, and solid foundations in scientific disciplines. Designed to match industry standards and academic excellence, the course prepares graduates for research, postgraduate study, or science-based careers.
+    </p>
+  </section>
+
+  <section class="highlights">
+    <h3>Program Highlights</h3>
+    <ul>
+      <li>3-year undergraduate degree recognized by UGC</li>
+      <li>Experienced faculty and modern lab infrastructure</li>
+      <li>Electives in Data Science, AI, and Biotechnology</li>
+      <li>Research-oriented projects and internships</li>
+      <li>Soft skills & career guidance workshops</li>
+    </ul>
+  </section>
+
+  <section class="subjects">
+    <h3>Major Specializations</h3>
+    <div class="program-blocks">
+      <div class="program-card">
+        <h4>Physics</h4>
+        <p>Mechanics, quantum physics, thermodynamics, electronics, and nuclear science.</p>
+      </div>
+      <div class="program-card">
+        <h4>Chemistry</h4>
+        <p>Inorganic, organic, and physical chemistry, instrumentation, and green chemistry.</p>
+      </div>
+      <div class="program-card">
+        <h4>Biology</h4>
+        <p>Genetics, molecular biology, botany, microbiology, and human physiology.</p>
+      </div>
+      <div class="program-card">
+        <h4>Mathematics</h4>
+        <p>Calculus, linear algebra, number theory, probability, and differential equations.</p>
+      </div>
+      <div class="program-card">
+        <h4>Computer Science</h4>
+        <p>Programming, data structures, web development, Python, and databases.</p>
+      </div>
+      <div class="program-card">
+        <h4>Environmental Science</h4>
+        <p>Ecology, sustainability, climate change, and environmental policy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <a href="apply.html">Apply Now</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nalanda University. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

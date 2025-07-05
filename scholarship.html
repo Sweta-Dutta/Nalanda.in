@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Scholarships | Nalanda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #2980b9;
+      --accent: #e67e22;
+      --light: #f9f9fb;
+      --text: #34495e;
+      --radius: 8px;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: var(--light);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .banner {
+      background-color: var(--secondary);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    .banner h2 {
+      font-size: 2.4rem;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .section h3 {
+      color: var(--secondary);
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--secondary);
+      margin-top: 0;
+    }
+
+    .card p {
+      color: #7f8c8d;
+      font-size: 0.95rem;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 3rem auto 2rem;
+    }
+
+    .cta a {
+      background-color: var(--accent);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta a:hover {
+      background-color: #d35400;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nalanda</h1>
+  </header>
+
+  <section class="banner">
+    <h2>Scholarships & Financial Aid</h2>
+    <p>Empowering learners through opportunities and equity</p>
+  </section>
+
+  <section class="section">
+    <h3>Why Scholarships Matter</h3>
+    <p>
+      Nalanda believes that finances should never be a barrier to education. We offer a range of need-based and merit-based scholarships to help aspiring students access high-quality learning resources and mentorship across disciplines and exam pathways.
+    </p>
+  </section>
+
+  <section class="section">
+    <h3>Scholarships Available</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Merit Excellence Award</h4>
+        <p>For top 5% performers in internal assessments & mock tests. Up to 100% fee waiver available.</p>
+      </div>
+      <div class="card">
+        <h4>Need-Based Aid</h4>
+        <p>Partial to full fee waivers for students from low-income backgrounds after application & review.</p>
+      </div>
+      <div class="card">
+        <h4>Girl Scholar Grant</h4>
+        <p>To support female aspirants in competitive prep programs like JEE, NEET & UPSC.</p>
+      </div>
+      <div class="card">
+        <h4>Language Learning Support</h4>
+        <p>Subsidized courses for regional & foreign language programs for inclusive learners.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Eligibility & Application</h3>
+    <p>
+      Eligibility varies by scholarship type. Most require either academic merit, economic need documentation, or recommendation letters. Students may be invited for interviews or online evaluations as part of the selection process.
+    </p>
+  </section>
+
+  <section class="cta">
+    <a href="apply.html">Apply for Scholarship</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nalanda University. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

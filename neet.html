@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NEET Preparation | Nalanda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #2980b9;
+      --accent: #e67e22;
+      --light: #f7f9fc;
+      --text: #34495e;
+      --radius: 8px;
+      --shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: var(--light);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      text-align: center;
+      color: #fff;
+      padding: 1.5rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .banner-image {
+      background: url('https://www.kindpng.com/picc/m/109-1097939_stethoscope-hd-png-download.png') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+
+    .banner-image .overlay {
+      background: rgba(0, 0, 0, 0.4);
+      display: inline-block;
+      padding: 2rem;
+      border-radius: 8px;
+    }
+
+    .banner-image h2 {
+      font-size: 2.6rem;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .section h3 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--secondary);
+      margin-bottom: 1rem;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      margin-top: 0;
+      font-family: 'Montserrat', sans-serif;
+      color: var(--secondary);
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #7f8c8d;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .cta a {
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #d35400;
+    }
+
+    footer {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nalanda </h1>
+  </header>
+
+  <section class="banner-image">
+    <div class="overlay">
+      <h2>NEET Preparation</h2>
+      <p>Crack India’s top medical entrance exam with strategy, science, and support</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>About NEET</h3>
+    <p>
+      The National Eligibility cum Entrance Test (NEET) is a national-level entrance exam for MBBS, BDS, AYUSH, and other undergraduate medical programs in India. NEET assesses knowledge in Physics, Chemistry, and Biology (Botany & Zoology).
+    </p>
+  </section>
+
+  <section class="section">
+    <h3>What We Offer</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>NEET Foundation + Board Prep</h4>
+        <p>Integrated coaching aligned with NCERT and NEET formats, ideal for Class XI & XII students.</p>
+      </div>
+      <div class="card">
+        <h4>Concept Mastery Bootcamp</h4>
+        <p>Revision classes for tricky NEET topics across Zoology, Organic Chemistry, and Modern Physics.</p>
+      </div>
+      <div class="card">
+        <h4>Mock Series & Analysis</h4>
+        <p>Weekly mock tests with OMR drills, speed improvement charts, and video discussions.</p>
+      </div>
+      <div class="card">
+        <h4>Strategy & Mentorship</h4>
+        <p>Study plans, doubt clearing, stress tips, and mentor calls to optimize your prep journey.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <a href="apply.html">Join NEET Coaching</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nalanda University. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Master of Business Administration (MBA) | Nalanda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #2980b9;
+      --accent: #e67e22;
+      --light: #f7f9fc;
+      --text: #34495e;
+      --radius: 8px;
+      --shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: var(--light);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .banner {
+      background: url('https://tse1.mm.bing.net/th/id/OIP.cZXcmg4rExP-Twsg7B65sQHaDT?r=0&w=539&h=240&rs=1&pid=ImgDetMain&o=7&rm=3') center/cover no-repeat;
+      padding: 5rem 1rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    .banner h2 {
+      font-size: 2.6rem;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 0.5rem;
+    }
+
+    .overview, .features, .specializations, .cta {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .overview p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .features ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .features li::before {
+      content: "✔";
+      color: var(--accent);
+      margin-right: 0.5rem;
+    }
+
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--secondary);
+      margin-top: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--secondary);
+      margin-top: 0;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #7f8c8d;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .cta a {
+      background: var(--accent);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #d35400;
+    }
+
+    footer {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nalanda</h1>
+  </header>
+
+  <section class="banner">
+    <h2>Master of Business Administration (MBA)</h2>
+    <p>Lead with strategy. Compete with clarity.</p>
+  </section>
+
+  <section class="overview">
+    <p>
+      Nalanda’s MBA program empowers future leaders with analytical frameworks, business acumen, and strategic thinking to thrive in dynamic global markets. Choose from industry-aligned specializations, collaborate on live projects, and graduate with career confidence.
+    </p>
+  </section>
+
+  <section class="features">
+    <h3 class="section-title">Program Highlights</h3>
+    <ul>
+      <li>2-year full-time postgraduate degree</li>
+      <li>Choice of five industry-relevant specializations</li>
+      <li>Case-based pedagogy & capstone strategy simulation</li>
+      <li>Internships with startups and corporate giants</li>
+      <li>Placement preparation & leadership bootcamps</li>
+    </ul>
+  </section>
+
+  <section class="specializations">
+    <h3 class="section-title">Specializations Offered</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Marketing</h4>
+        <p>Branding, digital strategy, consumer behavior, CRM & campaign analytics.</p>
+      </div>
+      <div class="card">
+        <h4>Finance</h4>
+        <p>Corporate finance, investment banking, risk, fintech & equity research.</p>
+      </div>
+      <div class="card">
+        <h4>Human Resource Management</h4>
+        <p>Talent acquisition, L&D, performance appraisal, labor laws & HR tech.</p>
+      </div>
+      <div class="card">
+        <h4>Operations & Supply Chain</h4>
+        <p>Logistics, lean management, ERP systems, quality control & procurement.</p>
+      </div>
+      <div class="card">
+        <h4>Business Analytics</h4>
+        <p>Data-driven decision making, BI dashboards, Python, R & machine learning.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <a href="apply.html">Apply Now</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nalanda University. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

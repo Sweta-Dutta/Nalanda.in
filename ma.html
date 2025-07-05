@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Master of Arts (M.A) | Nalanda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Optional External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #2980b9;
+      --accent: #e67e22;
+      --light: #f7f9fc;
+      --text: #34495e;
+      --radius: 8px;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--light);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .banner {
+      background: url('https://www.royalmint.com/globalassets/dan-r-assets/make-your-mark-on-history/recruit-dt-banner-1600x800.jpg') center/cover no-repeat;
+      padding: 5rem 1rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    .banner h2 {
+      font-size: 2.6rem;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0 0 1rem;
+    }
+
+    .overview, .departments, .cta {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .overview p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--secondary);
+      margin-top: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      color: var(--secondary);
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 0;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #7f8c8d;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .cta a {
+      background: var(--accent);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #d35400;
+    }
+
+    footer {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nalanda</h1>
+  </header>
+
+  <section class="banner">
+    <h2>Master of Arts (M.A)</h2>
+    <p>Advance your perspective. Lead change through ideas.</p>
+  </section>
+
+  <section class="overview">
+    <p>
+      The M.A program at Nalanda cultivates intellectual depth, interdisciplinary insights, and cultural empathy. Whether your passion lies in literature, politics, psychology or public policy, our faculty and research-driven curriculum will equip you for thoughtful leadership in academia, governance, media, and beyond.
+    </p>
+  </section>
+
+  <section class="departments">
+    <h3 class="section-title">Specializations Offered</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>M.A English Literature</h4>
+        <p>Literary theory, modern & classical texts, linguistics, postcolonial studies.</p>
+      </div>
+      <div class="card">
+        <h4>M.A History</h4>
+        <p>Ancient civilizations, modern Indian history, world history & historiography.</p>
+      </div>
+      <div class="card">
+        <h4>M.A Psychology</h4>
+        <p>Social, cognitive, counseling, developmental, and experimental psychology.</p>
+      </div>
+      <div class="card">
+        <h4>M.A Political Science</h4>
+        <p>Comparative politics, global affairs, public policy, Indian constitution.</p>
+      </div>
+      <div class="card">
+        <h4>M.A Sociology</h4>
+        <p>Cultural theory, social change, family & kinship, research methods.</p>
+      </div>
+      <div class="card">
+        <h4>M.A Philosophy</h4>
+        <p>Indian & Western traditions, ethics, logic, metaphysics, aesthetics.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <a href="apply.html">Apply Now</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nalanda University. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

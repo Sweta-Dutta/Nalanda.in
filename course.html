@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nalanda Course Categories</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+   
+  .category-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-card {
+  display: block;
+  background: #fff;
+  border: 1px solid #dfe6e9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+}
+
+.category-card .card-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.category-card h3 {
+  margin: 1rem 0 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #2980b9;
+}
+
+.category-card p {
+  margin: 0 1rem 1.5rem;
+  color: #7f8c8d;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(44,62,80,0.15);
+}
+/* Theme Variables */
+:root {
+  --color-bg: #ecf0f1;
+  --color-card: #ffffff;
+  --color-primary: #2c3e50;
+  --color-secondary: #2980b9;
+  --color-accent: #e67e22;
+  --color-accent-hover: #d35400;
+  --color-text: #2c3e50;
+  --radius: 8px;
+  --shadow-light: 0 2px 8px rgba(44, 62, 80, 0.1);
+  --shadow-hover: 0 8px 24px rgba(44, 62, 80, 0.15);
+  --transition-fast: 0.3s ease;
+}
+
+/* Courses Grid */
+.category-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Card Base */
+.category-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-light);
+  text-decoration: none;
+  color: inherit;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+/* Image Styling */
+.category-card .card-img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  transition: transform var(--transition-fast);
+}
+
+/* Hover Zoom & Shadow */
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+.category-card:hover .card-img {
+  transform: scale(1.05);
+}
+
+/* Dark Overlay on Hover */
+.category-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0);
+  transition: background var(--transition-fast);
+}
+.category-card:hover::after {
+  background: rgba(0,0,0,0.3);
+}
+
+/* Text Container */
+.category-card h3,
+.category-card p {
+  position: relative;
+  margin: 0;
+  z-index: 1;
+  padding: 0 1rem;
+}
+.category-card h3 {
+  margin-top: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  color: var(--color-secondary);
+  letter-spacing: 0.5px;
+}
+.category-card p {
+  margin: 0.5rem 0 1.5rem;
+  color: #7f8c8d;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Decorative Accent Bar */
+.category-card h3::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .category-card .card-img {
+    height: 200px;
+  }
+  :root {
+  --color-card-alt: #fafbfc;
+}
+
+.category-card {
+  background: var(--color-card-alt);
+}
+/* Section Background */
+section#courses {
+  background-color: #97bbf0;
+}
+/* Section Background */
+
+
+}
+
+
+  </style>
+</head>
+<section id="courses">
+  <h2>Our Courses</h2>
+  <div class="category-grid">
+    <!-- Undergraduate -->
+    <a href="undergraduate.html" class="category-card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.C16USZS3twRrx9EuLOuJDgAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"  class="card-img">
+      <h3>Undergraduate</h3>
+      <p>Degree programs in sciences, arts, commerce & engineering.</p>
+    </a>
+
+    <!-- Graduate -->
+    <a href="graduate.html" class="category-card">
+      <img src="https://assets.medpagetoday.net/media/images/104xxx/104424.jpg" class="card-img">
+      <h3>Graduate</h3>
+      <p>Master’s & doctoral courses to advance your expertise.</p>
+    </a>
+
+    <!-- Professional Development -->
+    <a href="professional.html" class="category-card">
+      <img src="https://thumbs.dreamstime.com/z/infographic-design-elements-six-options-professional-development-arrow-wheel-circle-style-concept-colorful-circular-150658057.jpg" class="card-img">
+      <h3>Professional Development</h3>
+      <p>Short courses, certifications & skill-building workshops.</p>
+    </a>
+
+    <!-- Online Courses -->
+    <a href="online.html" class="category-card">
+      <img src="https://thenewsavvy.com/wp-content/uploads/2017/06/online-courses-education-singapore.jpg"  class="card-img">
+      <h3>Online Courses</h3>
+      <p>Flexible, 100% online programs you can start anytime.</p>
+    </a>
+  </div>
+</section>
+
+
+</body>
+</html>

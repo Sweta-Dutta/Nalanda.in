@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nalanda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* General Styles */
+      /* Base Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
+
+/* Links */
+a {
+  color: #e67e22;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #d35400;
+}
+
+/* Navbar */
+.navbar {
+  background: #2c3e50;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar h1 {
+  margin: 0;
+  font-family: 'Pacifico', cursive;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+.navbar a {
+  color: #fff;
+  font-weight: 500;
+}
+.navbar a:hover {
+  color: #e67e22;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: #2980b9;
+  color: #fff;
+  font-family: 'Lobster', cursive;
+}
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  color: #2980b9;
+  background: #e67e22;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.btn:hover {
+  background: #d35400;
+  color: #fff;
+}
+
+/* Sections */
+section {
+  padding: 3rem 2rem;
+}
+#about, #contact, #study-materials, #scholarships, #login {
+  background: #ecf0f1;
+}
+#courses, #reviews, #book-session {
+  background: #fff;
+}
+
+/* Course Cards */
+.category-grid,
+.course-card {
+  display: grid;
+  gap: 2rem;
+}
+.course-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #dfe6e9;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.course-card h3 {
+  margin-top: 0;
+  color: #2980b9;
+}
+.course-card p {
+  color: #7f8c8d;
+}
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(44,62,80,0.15);
+}
+
+/* Review Cards */
+.review-card {
+  background: #fff;
+  padding: 1.5rem;
+  border: 1px solid #dfe6e9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1rem;
+}
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(44,62,80,0.15);
+}
+.review-card .review-content {
+  display: flex;
+  align-items: center;
+}
+.review-card p {
+  margin: 0;
+  color: #2c3e50;
+}
+
+/* Form Section */
+.form-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.1);
+  max-width: 450px;
+  margin: 0 auto;
+}
+.form-container h2,
+.form-container p {
+  text-align: center;
+  margin: 0 0 1rem;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-group label {
+  color: #2c3e50;
+  font-weight: 500;
+}
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #dfe6e9;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+.btn-submit {
+  display: block;
+  width: 100%;
+  background: #2980b9;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn-submit:hover {
+  background: #2471a3;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 2rem;
+}
+footer h3 {
+  margin-bottom: 0.5rem;
+  color: #e67e22;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 1.5rem;
+}
+footer li {
+  margin: 0.3rem 0;
+}
+footer a {
+  color: #fff;
+  font-weight: 400;
+}
+footer a:hover {
+  color: #e67e22;
+}
+
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <h1>Nalanda</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#study-materials">Study Materials</a></li>
+                <li><a href="scholarship.html">Scholarships</a></li>
+                <li><a href="buy_course.html">Buy a Course</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <h2>Welcome to Nalanda</h2><a href="https://ibb.co/3sp88t4"><img src="https://i.ibb.co/TT4nnzY/na.jpg" alt="na" height="100" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
+        <p>Empowering Education for Everyone</p>
+        <a href="course.html" class="btn">Explore Courses</a>
+    </section>
+    <section id="about">
+        <h2>About Nalanda</h2>
+        <p>Nalanda is an online education platform offering a wide range of courses for learners of all ages.</p>
+    </section>
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="course-card">
+            <h3>Course 1: Science & Technology</h3>
+            <a href="https://ibb.co/3vBRRvb"><img src="https://i.ibb.co/FXgHHX1/Whats-App-Image-2025-01-26-at-14-00-03-f65a5a44.jpg" alt="Whats-App-Image-2025-01-26-at-14-00-03-f65a5a44" height="100" width="100"></a>
+            <p>Explore the rich history of ancient civilizations.</p>
+        </div>
+        <div class="course-card">
+            <h3>Course 2: Business & Management</h3>
+            <a href="https://ibb.co/RNK8RQ9"><img src="https://i.ibb.co/dtvZ8kr/bus.jpg" height="100" width="100" ></a>
+            <p>Build a strong foundation in STEM subjects.</p>
+        </div>
+        <div class="course-card">
+            <h3>Course 3: Arts & Humanities</h3>
+            <a href="https://ibb.co/BGYtHdx"><img src="https://i.ibb.co/1M4LYh5/arts.jpg" height="100" width="100"></a>
+            <p>Express creativity through arts.</p>
+        </div>
+        <div class="course-card">
+            <h3>Course 5: Language Learning</h3>
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/kywBdnJ/lan.jpg" height="100" width="100"></a>
+            <p>Master new languages and expand your communication skills.</p>
+        </div>
+        <div class="course-card">
+            <h3>Course 6: Professional Development</h3>
+            <a href="https://ibb.co/qgpnsGd"><img src="https://i.ibb.co/xg6sjvD/pro.jpg" height="100" width="100"></a>
+            <p>Enhance your professional skills and advance your career.</p>
+        </div>
+    </section>
+    <section id="reviews">
+        <h2>Reviews</h2>
+        <div class="review-card">
+            <div class="review-content">
+               
+                <p><strong>Parent:</strong> "Naland has been a game-changer for my child's education. The courses are engaging and effective."</p>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-content">
+               
+                <p><strong>Student:</strong> "I love the interactive lessons on Nalanda. They make learning so much fun!"</p>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-content">
+                <p><strong>Parent:</strong> "The improvement in my child's grades is remarkable. Thank you, Nalanda"</p>
+            </div>
+        </div>
+    </section>
+    <section id="book-session">
+        <div class="form-container">
+            <h2>Book your Free Session</h2>
+            <p>Learn from India's best teachers</p>
+            <form>
+                <div class="form-group">
+                    <label for="session-mode">Select the Session Mode</label>
+                    <select id="session-mode" name="session-mode" required>
+                        <option value="online">Online</option>
+                        <option value="offline">Offline</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="child-name">Enter Name *</label>
+                    <input type="text" id="child-name" name="child-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile-number">Enter your Mobile Number *</label>
+                    <input type="tel" id="mobile-number" name="mobile-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-address">Email Address *</label>
+                    <input type="email" id="email-address" name="email-address" required>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="btn-submit">Continue to Schedule</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    
+    <img src="https://th.bing.com/th/id/OIP.sWUCL50tYndN6E9tV3HQmQHaEO?rs=1&pid=ImgDetMain" height="200">
+    <img src="https://www.alamy.com/aggregator-api/download?url=https://c8.alamy.com/comp/KX3873/group-indian-school-students-book-with-laptop-study-e-learning-class-KX3873.jpg" height="200">
+    <img src="https://www.mheducation.co.uk/media/wysiwyg/first-year_university_student.jpg" height="200">
+    <img src="https://s35691.pcdn.co/wp-content/uploads/2017/09/iStock-507009337-171002.png" height="200">
+    
+    <footer>
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col">
+              <h3>Courses</h3>
+              <ul>
+                <li><a href="undergraduate.html">Undergraduate</a></li>
+                <li><a href="postgraduate.html">PostGraduate</a></li>
+                <li><a href="professional.html">Professional Development</a></li>
+                 <li><a href="language.html">Language Learning</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>Exams</h3>
+              <ul>
+                <li><a href="entrance.html">Entrance Exams</a></li>
+                <li><a href="board.html">Board Exams</a></li>
+                <li><a href="competitive.html">Competitive Exams</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>Company</h3>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="career.html">Careers</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="partnership.html">Partnerships</a></li>
+              </ul>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>
+            

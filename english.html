@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>English Language | Nalanda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #2980b9;
+      --accent: #e67e22;
+      --light: #f7f9fc;
+      --text: #34495e;
+      --radius: 8px;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: var(--light);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .banner-image {
+      background: url('https://d2gr5kl7dt2z3t.cloudfront.net/blog/wp-content/uploads/2015/10/14084057/shutterstock_142720453.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+
+    .banner-image .overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 2rem;
+      display: inline-block;
+      border-radius: 8px;
+    }
+
+    .banner-image h2 {
+      font-size: 2.6rem;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .section h3 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--secondary);
+      margin-bottom: 1rem;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--secondary);
+      margin-top: 0;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #7f8c8d;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .cta a {
+      background: var(--accent);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #d35400;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nalanda</h1>
+  </header>
+
+  <section class="banner-image">
+    <div class="overlay">
+      <h2>English Language Learning</h2>
+      <p>Master English with confidence—speak, write, and connect globally</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Overview</h3>
+    <p>
+      Nalanda’s English language courses are designed to help learners at all levels—from beginner to advanced—build fluency, accuracy, and confidence. Whether you're aiming to succeed academically, professionally, or socially, our curriculum adapts to your goals.
+    </p>
+  </section>
+
+  <section class="section">
+    <h3>Focus Areas</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Spoken English</h4>
+        <p>Daily conversations, pronunciation, and confidence-building for real-world situations.</p>
+      </div>
+      <div class="card">
+        <h4>Grammar & Writing</h4>
+        <p>Sentence structure, vocabulary building, academic writing, and creative expression.</p>
+      </div>
+      <div class="card">
+        <h4>Business English</h4>
+        <p>Emails, presentations, interview prep, and professional correspondence.</p>
+      </div>
+      <div class="card">
+        <h4>Exam Prep (IELTS/TOEFL)</h4>
+        <p>Test-taking strategies, sample papers, listening and reading sections covered in-depth.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <a href="apply.html">Enroll in English Course</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nalanda University. All rights reserved.</p>
+  </footer>
+</body>
+</html>

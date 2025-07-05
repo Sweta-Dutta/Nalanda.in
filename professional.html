@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Professional Development Courses | Nalanda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #2980b9;
+      --accent: #e67e22;
+      --light: #f7f9fc;
+      --text: #34495e;
+      --radius: 8px;
+      --shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: var(--light);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .banner {
+      background: url('https://wallpaperaccess.com/full/1767974.jpg') center/cover no-repeat;
+      padding: 5rem 1rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    .banner h2 {
+      font-size: 2.6rem;
+      margin-bottom: 0.5rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .overview,
+    .highlights,
+    .tracks,
+    .cta {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .overview p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--secondary);
+      margin: 2rem 0 1rem;
+    }
+
+    .highlights ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .highlights li::before {
+      content: "✔";
+      color: var(--accent);
+      margin-right: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      margin-top: 0;
+      color: var(--secondary);
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .card p {
+      margin: 0.5rem 0 0;
+      font-size: 0.95rem;
+      color: #7f8c8d;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .cta a {
+      background: var(--accent);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #d35400;
+    }
+
+    footer {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nalanda</h1>
+  </header>
+
+  <section class="banner">
+    <h2>Professional Development</h2>
+    <p>Upskill. Reskill. Stay future-ready in an evolving world of work.</p>
+  </section>
+
+  <section class="overview">
+    <p>
+      Nalanda’s Professional Development courses empower individuals to thrive in their careers through focused, flexible, and forward-looking programs. Whether you're a working professional seeking a career boost or a graduate looking to specialize, our short-term certifications offer practical and competitive skills.
+    </p>
+  </section>
+
+  <section class="highlights">
+    <h3 class="section-title">Why Choose These Courses?</h3>
+    <ul>
+      <li>Short-term certifications (4–12 weeks)</li>
+      <li>Weekend & evening batches for working professionals</li>
+      <li>Certificate from Nalanda on completion</li>
+      <li>Live projects, career mentoring & resume prep</li>
+      <li>Industry-led curriculum with real-world case studies</li>
+    </ul>
+  </section>
+
+  <section class="tracks">
+    <h3 class="section-title">Course Tracks</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Digital Marketing</h4>
+        <p>SEO, SEM, social media strategy, email marketing, Google Ads & Analytics.</p>
+      </div>
+      <div class="card">
+        <h4>Project Management</h4>
+        <p>Agile & Scrum, PMP concepts, stakeholder communication, Gantt charts.</p>
+      </div>
+      <div class="card">
+        <h4>Business Communication</h4>
+        <p>Presentation skills, formal writing, business etiquette, and negotiation.</p>
+      </div>
+      <div class="card">
+        <h4>Leadership & Team Building</h4>
+        <p>Emotional intelligence, conflict resolution, feedback delivery, coaching.</p>
+      </div>
+      <div class="card">
+        <h4>Finance for Non-Finance</h4>
+        <p>Balance sheets, cash flow, ROI analysis, budgeting basics.</p>
+      </div>
+      <div class="card">
+        <h4>Data Analysis with Excel</h4>
+        <p>Advanced Excel functions, pivot tables, dashboards, and data visualization.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <a href="apply.html">Apply Now</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nalanda University. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

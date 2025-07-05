@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Apply for Admission | Nalanda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Page‐specific overrides */
+    body {
+      background: #f7f9fc;
+    }
+    .page-banner {
+      background: #2980b9;
+      padding: 3rem 1rem;
+      text-align: center;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .page-banner h2 {
+      margin: 0 0 0.5rem;
+      font-size: 2.5rem;
+    }
+    .page-banner p {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: 400;
+    }
+    section#apply {
+      padding: 2rem 1rem;
+    }
+    .form-container {
+      max-width: 500px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 2rem;
+    }
+    .form-container h2 {
+      margin-top: 0;
+      font-family: 'Montserrat', sans-serif;
+      color: #2c3e50;
+      text-align: center;
+    }
+    .form-container p {
+      text-align: center;
+      color: #7f8c8d;
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #2c3e50;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #dfe6e9;
+      border-radius: 5px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.95rem;
+      color: #34495e;
+      box-sizing: border-box;
+    }
+    .form-group textarea {
+      resize: vertical;
+    }
+    .btn-submit {
+      display: block;
+      width: 100%;
+      background: #e67e22;
+      color: #fff;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn-submit:hover {
+      background: #d35400;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1>Nalanda</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#courses">Courses</a></li>
+        <li><a href="index.html#reviews">Reviews</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#study-materials">Study Materials</a></li>
+        <li><a href="index.html#scholarships">Scholarships</a></li>
+        <li><a href="index.html#buy-course">Buy a Course</a></li>
+        <li><a href="index.html#login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="page-banner">
+    <h2>Apply for Admission</h2>
+    <p>Fill out the form below to start your journey at Nalanda University</p>
+  </section>
+
+  <!-- Application Form -->
+  <section id="apply">
+    <div class="form-container">
+      <h2>Application Form</h2>
+      <p>Please complete all required fields marked with *</p>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="full-name">Full Name *</label>
+          <input type="text" id="full-name" name="full-name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Mobile Number *</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth *</label>
+          <input type="date" id="dob" name="dob" required />
+        </div>
+        <div class="form-group">
+          <label for="program">Program Applying For *</label>
+          <select id="program" name="program" required>
+            <option value="">Select a program</option>
+            <option value="bsc">B.Sc - Bachelor of Science</option>
+            <option value="ba">B.A - Bachelor of Arts</option>
+            <option value="bcom">B.Com - Bachelor of Commerce</option>
+            <option value="btech">B.Tech - Bachelor of Technology</option>
+            <option value="bba">BBA - Business Administration</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="specialization">Specialization (optional)</label>
+          <input
+            type="text"
+            id="specialization"
+            name="specialization"
+            placeholder="e.g., Physics, Marketing"
+          />
+        </div>
+        <div class="form-group">
+          <label for="address">Address (optional)</label>
+          <textarea id="address" name="address" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn-submit">Submit Application</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Nalanda University. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+```

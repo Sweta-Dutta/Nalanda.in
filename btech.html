@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bachelor of Technology (B.Tech) | Nalanda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- External CSS (Optional) -->
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #2980b9;
+      --accent: #e67e22;
+      --light: #f7f9fc;
+      --text: #34495e;
+      --radius: 8px;
+      --shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: var(--light);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .banner {
+      background: url('https://img.freepik.com/premium-photo/pair-cogs-mesh-together-digital-landscape-surrounded-by-holographic-data-visualizations-geometric-patterns_331695-43602.jpg') center/cover no-repeat;
+      padding: 5rem 1rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    .banner h2 {
+      font-size: 2.6rem;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 0.5rem;
+    }
+
+    .overview, .highlights, .branches, .cta {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .overview p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--secondary);
+      margin-top: 2rem;
+    }
+
+    .highlights ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .highlights li::before {
+      content: "✔";
+      color: var(--accent);
+      margin-right: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      color: var(--secondary);
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 0;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #7f8c8d;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .cta a {
+      background: var(--accent);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #d35400;
+    }
+
+    footer {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nalanda University</h1>
+  </header>
+
+  <section class="banner">
+    <h2>Bachelor of Technology (B.Tech)</h2>
+    <p>Engineering tomorrow’s solutions with precision and passion</p>
+  </section>
+
+  <section class="overview">
+    <p>
+      Nalanda’s B.Tech program delivers a rigorous curriculum with hands-on labs, real-world internships, and advanced electives. You'll explore core engineering principles alongside emerging technologies—preparing you to lead innovation in the 21st century.
+    </p>
+  </section>
+
+  <section class="highlights">
+    <h3 class="section-title">Program Highlights</h3>
+    <ul>
+      <li>4-year UGC-approved degree</li>
+      <li>Experiential learning with engineering labs & workshops</li>
+      <li>Industry-certified projects and internships</li>
+      <li>Access to AI/ML, IoT, and Cybersecurity electives</li>
+      <li>Capstone design project with real-world challenges</li>
+    </ul>
+  </section>
+
+  <section class="branches">
+    <h3 class="section-title">Popular Branches</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Computer Science Engineering</h4>
+        <p>DSA, OS, DBMS, AI/ML, full-stack development, DevOps.</p>
+      </div>
+      <div class="card">
+        <h4>Electronics & Communication</h4>
+        <p>Digital logic, VLSI, communication systems, embedded tech.</p>
+      </div>
+      <div class="card">
+        <h4>Civil Engineering</h4>
+        <p>Structures, construction materials, surveying, and CAD tools.</p>
+      </div>
+      <div class="card">
+        <h4>Mechanical Engineering</h4>
+        <p>Thermodynamics, manufacturing systems, robotics, and CAD/CAM.</p>
+      </div>
+      <div class="card">
+        <h4>Information Technology</h4>
+        <p>Networking, cloud computing, cybersecurity, mobile app development.</p>
+      </div>
+      <div class="card">
+        <h4>Artificial Intelligence & Data Science</h4>
+        <p>Big data, machine learning models, Python, AI ethics, and deployment tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <a href="apply.html">Apply Now</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nalanda University. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

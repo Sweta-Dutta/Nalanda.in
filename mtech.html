@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Master of Technology (M.Tech) | Nalanda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #2980b9;
+      --accent: #e67e22;
+      --light: #f7f9fc;
+      --text: #34495e;
+      --radius: 8px;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--light);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .banner {
+      background: url('https://tse2.mm.bing.net/th/id/OIP.eG1MpG0fWa62oG3QAzds0AHaDt?r=0&w=800&h=400&rs=1&pid=ImgDetMain&o=7&rm=3') center/cover no-repeat;
+      padding: 5rem 1rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    .banner h2 {
+      font-size: 2.6rem;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 0.5rem;
+    }
+
+    .overview, .tracks, .modules, .cta {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .overview p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--secondary);
+      margin: 2rem 0 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--secondary);
+      margin-top: 0;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #7f8c8d;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .cta a {
+      background: var(--accent);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #d35400;
+    }
+
+    footer {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nalanda</h1>
+  </header>
+
+  <section class="banner">
+    <h2>Master of Technology (M.Tech)</h2>
+    <p>Sharpen your specialization. Solve tomorrow’s engineering challenges.</p>
+  </section>
+
+  <section class="overview">
+    <p>
+      Nalanda’s M.Tech programs prepare future technologists to solve complex engineering problems through advanced coursework, lab innovation, and interdisciplinary research. From embedded systems to cloud computing and robotics, the curriculum is designed for maximum impact.
+    </p>
+  </section>
+
+  <section class="tracks">
+    <h3 class="section-title">Specialization Tracks</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Data Science & AI</h4>
+        <p>Machine learning, big data analytics, natural language processing, model deployment.</p>
+      </div>
+      <div class="card">
+        <h4>Cybersecurity</h4>
+        <p>Network security, cryptography, ethical hacking, digital forensics, SOC design.</p>
+      </div>
+      <div class="card">
+        <h4>VLSI & Embedded Systems</h4>
+        <p>Chip design, RTL modeling, FPGA implementation, ARM-based development.</p>
+      </div>
+      <div class="card">
+        <h4>Cloud Computing</h4>
+        <p>Distributed systems, AWS, GCP, DevOps automation, container orchestration.</p>
+      </div>
+      <div class="card">
+        <h4>Construction & Infrastructure</h4>
+        <p>Smart cities, BIM tools, structural modeling, environmental sustainability.</p>
+      </div>
+      <div class="card">
+        <h4>Energy Systems Engineering</h4>
+        <p>Green technology, power electronics, smart grids, solar and wind optimization.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <a href="apply.html">Apply Now</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nalanda University. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

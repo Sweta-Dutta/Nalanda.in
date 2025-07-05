@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Master of Commerce (M.Com) | Nalanda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #2980b9;
+      --accent: #e67e22;
+      --light: #f7f9fc;
+      --text: #34495e;
+      --radius: 8px;
+      --shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--light);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .banner {
+      background: url('https://www.fpmarkets.com/blog/wp-content/uploads/2022/11/dollar-rate.jpg') center/cover no-repeat;
+      padding: 5rem 1rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    .banner h2 {
+      font-size: 2.6rem;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 0.5rem;
+    }
+
+    .overview,
+    .features,
+    .modules,
+    .cta {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .overview p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--secondary);
+      margin-top: 2rem;
+    }
+
+    .features ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .features li::before {
+      content: '✔';
+      color: var(--accent);
+      margin-right: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      color: var(--secondary);
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 0;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #7f8c8d;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .cta a {
+      background: var(--accent);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #d35400;
+    }
+
+    footer {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nalanda</h1>
+  </header>
+
+  <section class="banner">
+    <h2>Master of Commerce (M.Com)</h2>
+    <p>Master the mechanics of business, finance, and strategy</p>
+  </section>
+
+  <section class="overview">
+    <p>
+      The M.Com program at Nalanda equips students with analytical and strategic skills in finance, taxation, accounting, and corporate governance. This postgraduate program is ideal for commerce graduates who aspire to hold senior positions in corporate, academic, or public-sector settings.
+    </p>
+  </section>
+
+  <section class="features">
+    <h3 class="section-title">Program Highlights</h3>
+    <ul>
+      <li>2-year UGC-recognized postgraduate degree</li>
+      <li>Electives in Forensic Accounting, International Business, and Fintech</li>
+      <li>Training in industry software: Tally, SAP, Excel Modeling</li>
+      <li>Research opportunities in accounting and economics</li>
+      <li>Internships and placement guidance</li>
+    </ul>
+  </section>
+
+  <section class="modules">
+    <h3 class="section-title">Core Subjects</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Advanced Accounting</h4>
+        <p>Consolidation, corporate restructuring, and international standards.</p>
+      </div>
+      <div class="card">
+        <h4>Corporate Governance</h4>
+        <p>Ethical leadership, stakeholder theory, and boardroom practices.</p>
+      </div>
+      <div class="card">
+        <h4>Financial Management</h4>
+        <p>Capital budgeting, valuation, risk-return models, and working capital.</p>
+      </div>
+      <div class="card">
+        <h4>Research Methodology</h4>
+        <p>Qualitative and quantitative research design, surveys, and SPSS.</p>
+      </div>
+      <div class="card">
+        <h4>Banking & Insurance</h4>
+        <p>Commercial banking operations, credit appraisal, and IRDAI norms.</p>
+      </div>
+      <div class="card">
+        <h4>Taxation & Auditing</h4>
+        <p>Income Tax Act, GST, auditing standards, and compliance reports.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <a href="apply.html">Apply Now</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nalanda University. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

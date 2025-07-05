@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Buy Course | Nalanda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #2980b9;
+      --accent: #e67e22;
+      --light: #f7f9fc;
+      --text: #34495e;
+      --radius: 8px;
+      --shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: var(--light);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .course-summary {
+      margin-bottom: 2rem;
+    }
+
+    .course-summary h2 {
+      margin-bottom: 0.5rem;
+      font-family: 'Montserrat', sans-serif;
+      color: var(--secondary);
+    }
+
+    .course-summary p {
+      margin-bottom: 0.3rem;
+    }
+
+    form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+
+    form input, form select {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: var(--radius);
+      font-size: 1rem;
+    }
+
+    button {
+      margin-top: 2rem;
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.9rem 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #d35400;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nalanda</h1>
+  </header>
+
+  <div class="container">
+    <div class="course-summary">
+      <h2>CUET (UG) Complete Preparation Course</h2>
+      <p><strong>Includes:</strong> Domain subjects, general test, English, doubt-solving & 10+ mock tests</p>
+      <p><strong>Duration:</strong> 6 Months | <strong>Access:</strong> Full Online</p>
+      <p><strong>Price:</strong> ₹7,499</p>
+    </div>
+
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" required />
+
+      <label for="course">Select Course</label>
+      <select id="course">
+        <option>CUET UG</option>
+        <option>JEE Foundation</option>
+        <option>NEET Target</option>
+        <option>SSC CGL</option>
+        <option>English Language</option>
+      </select>
+
+      <label for="payment">Payment Method</label>
+      <select id="payment">
+        <option>Credit / Debit Card</option>
+        <option>UPI</option>
+        <option>Net Banking</option>
+      </select>
+
+      <button type="submit">Proceed to Checkout</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Nalanda University. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

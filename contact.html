@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us | Nalanda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #2980b9;
+      --accent: #e67e22;
+      --light: #f7f9fc;
+      --text: #34495e;
+      --radius: 8px;
+      --shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: var(--light);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      padding: 1.5rem;
+      color: #fff;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* .banner {
+      background: url('images/contact-banner.jpg') center/cover no-repeat;
+      padding: 4rem 1rem;
+      text-align: center;
+      color: #fff;
+    } */
+
+    .banner-solid {
+  background-color: #2980b9; /* You can adjust to your theme */
+  color: #fff;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.banner-solid h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+    .banner h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      margin: 0 0 1rem;
+    }
+
+    .contact-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .contact-info,
+    .contact-form {
+      flex: 1 1 350px;
+      background: #fff;
+      padding: 2rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .contact-info h3,
+    .contact-form h3 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--secondary);
+    }
+
+    .info-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .info-item strong {
+      display: block;
+      margin-bottom: 0.25rem;
+      color: var(--primary);
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input,
+    textarea {
+      padding: 0.75rem;
+      font-size: 0.95rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #d35400;
+    }
+
+    footer {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .contact-wrapper {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nalanda University</h1>
+  </header>
+
+<section class="banner-solid">
+  <h2>Contact Us</h2>
+  <p>We’d love to hear from you!</p>
+</section>
+
+
+
+  <section class="contact-wrapper">
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <div class="info-item">
+        <strong>Address:</strong>
+        Nalanda University, Knowledge Avenue, Bihar, India
+      </div>
+      <div class="info-item">
+        <strong>Email:</strong>
+        <a href="mailto:info@nalanda.edu.in">info@nalanda.edu.in</a>
+      </div>
+      <div class="info-item">
+        <strong>Phone:</strong>
+        +91-12345-67890
+      </div>
+      <div class="social-icons">
+        <a href="#">Facebook</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send a Message</h3>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name *" required />
+        <input type="email" name="email" placeholder="Your Email *" required />
+        <textarea name="message" placeholder="Your Message *" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nalanda University. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

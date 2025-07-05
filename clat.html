@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CLAT Preparation | Nalanda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #2980b9;
+      --accent: #e67e22;
+      --light: #f7f9fc;
+      --text: #34495e;
+      --radius: 8px;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--light);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .banner-image {
+      background: url('https://th.bing.com/th/id/R.bfdcce035049356674e484e7df8fc327?rik=YzEmcl%2bXZZnnig&riu=http%3a%2f%2fchristianfaithatwork.com%2fwp-content%2fuploads%2f2012%2f05%2flaw.jpg&ehk=yjKjnHEGj9iQesXv%2f0yRULRYd5rQWvbWOe9bEOREL2M%3d&risl=&pid=ImgRaw&r=0') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+
+    .banner-image .overlay {
+      background: rgba(0, 0, 0, 0.4);
+      display: inline-block;
+      padding: 2rem;
+      border-radius: 8px;
+    }
+
+    .banner-image h2 {
+      font-size: 2.6rem;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .section h3 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--secondary);
+      margin-bottom: 1rem;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      margin-top: 0;
+      font-family: 'Montserrat', sans-serif;
+      color: var(--secondary);
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #7f8c8d;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .cta a {
+      background-color: var(--accent);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #d35400;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nalanda </h1>
+  </header>
+
+  <section class="banner-image">
+    <div class="overlay">
+      <h2>CLAT & Law Entrance</h2>
+      <p>Prepare smartly for India’s top legal aptitude exams with Nalanda</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>About CLAT</h3>
+    <p>
+      The Common Law Admission Test (CLAT) is the national-level entrance exam for admission to prestigious National Law Universities (NLUs) across India. It evaluates proficiency in English, General Knowledge, Logical Reasoning, Legal Aptitude, and Quantitative Techniques.
+    </p>
+  </section>
+
+  <section class="section">
+    <h3>What We Offer</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>CLAT Foundation Course</h4>
+        <p>Step-by-step skill building for school students with grammar drills, GK capsules, and reasoning basics.</p>
+      </div>
+      <div class="card">
+        <h4>Crash Course for CLAT & AILET</h4>
+        <p>Targeted prep in legal aptitude, reading comprehension, current affairs, and math shortcuts.</p>
+      </div>
+      <div class="card">
+        <h4>Mock Test Series + GK Boosters</h4>
+        <p>Timed mocks, leaderboards, question banks, and daily static + dynamic GK updates.</p>
+      </div>
+      <div class="card">
+        <h4>Personalized Mentoring</h4>
+        <p>Expert one-on-one guidance, time strategy, and college preference planning from top NLU alumni.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <a href="apply.html">Enroll for CLAT Coaching</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nalanda University. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Postgraduate Programs | Nalanda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Optional External Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #2980b9;
+      --accent: #e67e22;
+      --light: #f7f9fc;
+      --text: #34495e;
+      --radius: 8px;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--light);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--primary);
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .banner {
+      background: url('https://media.postgrad.com/filer_public_thumbnails/filer_public/a7/52/a7526a83-282d-44bf-93b6-7e1fbce05db9/university_application_form_strip.jpg__1080x405_q85_subsampling-2.jpg') center/cover no-repeat;
+      padding: 5rem 1rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    .banner h2 {
+      font-size: 2.6rem;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 0.5rem;
+    }
+
+    .overview,
+    .specializations,
+    .cta {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .overview p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--secondary);
+      margin: 2rem 0 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      margin: 0 0 0.5rem;
+      color: var(--secondary);
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #7f8c8d;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .cta a {
+      background: var(--accent);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #d35400;
+    }
+
+    footer {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nalanda</h1>
+  </header>
+
+  <section class="banner">
+    <h2>Postgraduate Programs</h2>
+    <p>Advance your academic journey with expert-led master's programs</p>
+  </section>
+
+  <section class="overview">
+    <p>
+      Nalanda’s postgraduate programs are crafted for students seeking academic depth, industry relevance, and leadership growth. Our curriculum integrates research, innovation, and global exposure to equip students for specialized careers and doctoral pursuits.
+    </p>
+  </section>
+
+  <section class="specializations">
+    <h3 class="section-title">Available Programs</h3>
+    <div class="grid">
+      <div class="card">
+          <a href="msc.html" class="program-card">
+        <h4>M.Sc - Master of Science</h4>
+        <p>Advanced studies in Physics, Chemistry, Biology, and Computer Science with strong research focus.</p>
+        </a>
+      </div>
+      <div class="card">
+      <a href="ma.html" class="program-card">
+        <h4>M.A - Master of Arts</h4>
+        <p>Graduate-level learning in Literature, History, Political Science, Psychology, and Philosophy.</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="mcom.html" class="program-card">
+        <h4>M.Com - Master of Commerce</h4>
+        <p>Designed for future financial analysts, economists, and academic professionals in business.</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="mba.html" class="card">
+        <h4>MBA - Master of Business Administration</h4>
+        <p>Industry-aligned leadership training in HR, Finance, Marketing, and Operations Management.</p>
+        </a>
+      </div>
+      <div class="card">
+                <a href="mtech.html" class="card">
+        <h4>M.Tech - Master of Technology</h4>
+        <p>Technical mastery in Data Science, AI/ML, Software Engineering, VLSI, and Cybersecurity.</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="mca.html" class="card">
+  <h4>MCA – Master of Computer Applications</h4>
+  <p>In-depth training in programming, software development, databases, and computer science theory for IT careers and research pathways.</p>
+</a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <a href="apply.html">Apply Now</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nalanda University. All rights reserved.</p>
+  </footer>
+</body>
+</html>
